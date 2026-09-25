@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Mea+Culpa&family=Playwrite+CU+Guides&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lavishly+Yours&family=Mea+Culpa&family=Playwrite+CU+Guides&display=swap');
+
+
+.coffeeShop-header{
+  background-color: #6F4E37;
+
+  margin: 0px 0px 10px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+.header-left-section{
+  width: auto;
+}
+.logo{
+  width: 80px;
+  margin: 3px 3px 0px 3px;
+}
+.header-middle-section{
+  color:#FFF8F0;
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  flex: 1;
+  text-align: center;
+}
+.brew-coffee-shop{
+  font-weight: bold;
+  color: #35251a;
+  text-shadow: #FFF8F0 1px 0px 1px;
+}
+.header-right-section a{
+  text-decoration: none;
+  color: #FFF8F0;
+  margin-left: 10px;
+  transition: text-shadow 0.3s ease;
+}
+.header-right-section a:hover{
+  text-shadow: #35251a 5px 5px 5px;
+}
+
+@media (min-width: 992px) {
+  .header-right-section {
+    display: block !important;
+    flex-basis: auto;
+    width: auto;
+  }
+  .header-right-section .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .coffeeShop-header {
+    position: relative;
+    height: auto;
+    min-height: 100px;
+    flex-wrap: wrap;
+  }
+
+  .header-middle-section {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .coffeeShop-header .navbar-toggler {
+    padding: 6px 10px;
+    background-color: transparent;
+  }
+
+  .coffeeShop-header .navbar-toggler-icon {
+    background-image: linear-gradient(#FFF8F0, #FFF8F0),
+      linear-gradient(#FFF8F0, #FFF8F0),
+      linear-gradient(#FFF8F0, #FFF8F0);
+    background-position: center, center, center;
+    background-repeat: no-repeat;
+    background-size: 20px 2px, 20px 2px, 20px 2px;
+    background-position-y: 25%, 52%, 75%;
+  }
+    
+  .header-right-section {
+    display: grid;
+    flex-basis: 100%;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.35s ease;
+  }
+
+  .header-right-section.is-open {
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .header-right-section .navbar-nav {
+    min-height: 0;
+    overflow: hidden;
+    padding: 8px 0;
+  }
+
+  .header-right-section a {
+    display: block;
+    margin: 0;
+    padding: 6px 0;
+  }
+}
+@media(max-width: 425px){
+  .header-middle-section{
+    font-size:20px;
+  }
+}

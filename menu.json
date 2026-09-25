@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Cappuccino",
+    "category": "Coffee",
+    "price": 4.5,
+    "image": "images/cappuccino.jpg",
+    "sold": 70
+  },
+  {
+    "id": 2,
+    "name": "Caffe Latte",
+    "category": "Coffee",
+    "price": 4.75,
+    "image": "images/latte.jpg",
+    "sold": 90
+  },
+  {
+    "id": 3,
+    "name": "Espresso",
+    "category": "Coffee",
+    "price": 3,
+    "image": "images/espresso.jpg",
+    "sold": 200
+  },
+  {
+    "id": 4,
+    "name": "Mocha",
+    "category": "Coffee",
+    "price": 5,
+    "image": "images/mocha.jpg",
+    "sold": 100
+  },
+  {
+    "id": 5,
+    "name": "Iced Latte",
+    "category": "Cold Drinks",
+    "price": 5.25,
+    "image": "images/iced-latte.jpg",
+    "sold": 95
+  },
+  {
+    "id": 6,
+    "name": "Strawberry Smoothie",
+    "category": "Cold Drinks",
+    "price": 5.5,
+    "image": "images/strawberry-smoothie.jpg",
+    "sold": 50
+  },
+  {
+    "id": 7,
+    "name": "Chocolate Cake",
+    "category": "Desserts",
+    "price": 4.25,
+    "image": "images/chocolate-cake.jpg",
+    "sold": 56
+  },
+  {
+    "id": 8,
+    "name": "Blueberry Muffin",
+    "category": "Bakery",
+    "price": 3.5,
+    "image": "images/blueberry-muffin.jpg",
+    "sold": 45
+  },
+  {
+    "id": 9,
+    "name": "Croissant",
+    "category": "Bakery",
+    "price": 3.25,
+    "image": "images/croissant.jpg",
+    "sold": 150
+  },
+  {
+    "id": 10,
+    "name": "Cheesecake",
+    "category": "Desserts",
+    "price": 4.75,
+    "image": "images/cheesecake.jpg",
+    "sold": 70
+  }
+]

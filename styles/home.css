@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lavishly+Yours&family=Mea+Culpa&family=Playwrite+CU+Guides&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* colors:
+#FFF8F0
+#6F4E37
+ */
+
+.home-main-section, .about-us{
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; 
+
+  height: 400px;
+}
+.home-main-section{
+  background-image: linear-gradient(to right, #6F4E37 0%, #a07a5e 30%, rgba(245, 230, 211, 0) 75%), url("../images/coffee-shop.jpg");
+
+  margin-top: 110px;
+}
+.main-text-section{
+  width: 50%;
+  height: 100%;
+  padding: 30px 0px 30px 50px;
+}
+.main-first-text{
+  font-size: 40px;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100; 
+}
+.main-second-text{
+  font-size: 20px;
+  color: #eed6bb;
+}
+.third-text-button, .view-more-button{
+  background-color: #eed6bb;
+  border: 2px solid #6F4E37;
+}
+.third-text-button:hover, .view-more-button:hover{
+  background-color: #cab092;
+  transform: scale(1.02);
+  box-shadow: #a78b6d 3px 3px 10px ;
+}
+
+/* Second section */
+.home-second-section, .contact-us{
+  background-color: #f5e4b9;
+  padding-bottom: 15px;
+}
+.our-best-sellers{
+  font-weight: bold;
+  font-size: 25px;
+}
+.menu-item-container{
+  background-color: #a07a5e;
+
+  border: 1px solid black;
+  border-radius: 10px;;
+  margin-left: 5px;
+
+  width: 15%;
+}
+.container-first-half{
+  text-align: center;
+}
+.item-image{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 10px;;
+}
+.item-name{
+  font-size: 20px;
+}
+.item-price{
+  font-size: 17px;
+  color: #FFF8F0;
+}
+.add-to-cart-button i{
+  color: #FFF8F0;
+}
+.add-to-cart-button:hover{
+  background-color: #6F4E37;
+}
+
+/* third section */
+.about-us{
+  background-image: linear-gradient(to right, #6F4E37 0%, #a07a5e 30%, rgba(245, 230, 211, 0) 75%), url("../images/coffee-shop-2.jpg");
+}
+.contact-us{
+  padding-top: 20px;
+}
+.contact-first-section{
+  text-align: center;
+}
+.contact-fist-contact-us{
+  color: sienna;
+  font-weight: bold;
+  font-size: 25px;
+}
+.contact-third-section {
+  color: sienna;
+  font-weight:bold;
+}
+@media (max-width: 450px){
+  .home-main-section, .about-us{
+    height: 240px;
+  }
+  .main-text-section{
+    width: 60%;
+    padding: 20px 0px 30px 20px;
+  }
+  .main-first-text{
+    font-size:20px;
+  }
+  .main-second-text{
+    font-size: 12px;
+  }
+  .third-text-button{
+    font-size: 12px;
+  }
+  .our-best-sellers{
+    font-size: 15px;
+  }
+  .menu-item-container{
+    width: 30%;
+  }
+  .item-image{
+    height: 90px;
+  }
+  .item-name{
+  font-size: 13px;
+  }
+  .item-price{
+    font-size: 11px;
+  }
+  .add-to-cart-button{
+    font-size: 15px;
+  }
+  .contact-us{
+    padding-top: 10px;
+  }
+  .contact-fist-contact-us{
+    font-size: 14px;
+  }
+  .contact-first-text{
+    font-size: 12px;
+  }
+  .contact-list-section{
+    font-size: 10px;
+  }
+  .contact-third-section {
+     font-size: 12px;
+  }
+}
+@media (min-width: 451px) and (max-width: 900px){
+  .main-first-text{
+    font-size: 30px;
+  }
+  .main-second-text{
+    font-size: 15px;
+  }
+  .our-best-sellers{
+    font-size: 20px;
+  }
+  .menu-item-container{
+    width: 25%;
+  }
+  .item-image{
+     height: 100px;
+  }
+  .item-name{
+  font-size: 15px;
+  }
+  .item-price{
+    font-size: 13px;
+  }
+  .add-to-cart-button{
+    font-size: 17px;
+  }
+  .contact-us{
+    padding-top: 15px;
+  }
+  .contact-fist-contact-us{
+    font-size: 17px;
+  }
+  .contact-first-text{
+    font-size: 14px;
+  }
+  .contact-list-section{
+    font-size: 12px;
+  }
+  .contact-third-section {
+     font-size: 15px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 991.98px), (max-width: 450px){
+  .home-main-section{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1024.1px){
+  .menu-item-container{
+    width: 20%;
+  }
+  .item-image{
+    height: 120px;
+  }
+  .item-name{
+  font-size: 19px;
+  }
+  .item-price{
+    font-size: 15px;
+  }
+  .add-to-cart-button{
+    font-size: 21px;
+  }
+}
