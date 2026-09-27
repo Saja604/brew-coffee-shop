@@ -5,9 +5,6 @@ export function fetchMenu(){
     .then(response => response.json())
     .then(data => {
       menu = data
-      console.log(menu);
     });
     return promise;
 }
-
-console.log(menu[0])

@@ -9,9 +9,7 @@ async function loadPage(){
   }
   const bestSellersArray=createBestSellers();
   renderMenu(bestSellersArray);
-  // console.log(menu)
   const a =createBestSellers();
-  console.log(a);
 }
 loadPage();
 
@@ -46,7 +44,6 @@ function renderMenu(bestSellersArray){
   document.querySelectorAll('.add-to-cart-button').forEach((cartB) => {
       cartB.addEventListener('click', () => {
         const id = Number(cartB.dataset.id);
-        console.log(id);
         addToCart(id);
       })
     })

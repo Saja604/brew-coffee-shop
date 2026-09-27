@@ -6,8 +6,11 @@ async function loadPage(){
   } catch (error) {
     console.log('unexpected error. Please try again later');
   }
-  renderCart();
-  // console.log(menu)
+  
+  const cartContainer = document.querySelector('.cart-container');
+  if (cartContainer) {
+    renderCart();
+  }
 }
 loadPage();
 
@@ -67,7 +70,13 @@ function renderCart(){
       </div>
     `
   });
-  document.querySelector('.cart-container').innerHTML = cartList;
+  
+  if (cart.length === 0){
+    document.querySelector('.cart-container').innerHTML = `Your cart is empty`;
+  }
+  else{
+    document.querySelector('.cart-container').innerHTML = cartList;
+  }
 
   document.querySelector('.cart-container').addEventListener('change', (e) => {
     if (e.target.classList.contains('quantity-input')) {

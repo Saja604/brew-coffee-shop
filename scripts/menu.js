@@ -8,7 +8,6 @@ async function loadPage(){
     console.log('unexpected error. Please try again later');
   }
   renderMenu('View All');
-  // console.log(menu)
 }
 loadPage();
 
@@ -79,7 +78,6 @@ function renderMenu(option){
   document.querySelectorAll('.add-to-cart-button').forEach((cartB) => {
     cartB.addEventListener('click', () => {
       const id = Number(cartB.dataset.id);
-      console.log(id);
       addToCart(id);
     })
   })
